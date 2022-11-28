@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Griffy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Pedra, Papel e Tesoura</title>
   </head>
   <body>
-    <h1>Pedra, Papel ou Tesoura</h1>
-    <h2 class="vencedor"></h2>
-    <hr />
+    <header>
+      <h1>Pedra, Papel e Tesoura</h1>
+    </header>
+    <main>
+      <section class="jogador">
+        <h3>Jogador: <span>escolha uma opção</span></h3>
+        <div class="opcao opcao-jogador">
+          <div><img opt="pedra" src="img/pedra.png" alt="" /></div>
+          <div><img opt="papel" src="img/papel.png" alt="" /></div>
+          <div><img opt="tesoura" src="img/tesoura.png" alt="" /></div>
+        </div>
+      </section>
+      <section class="resutado">
+        <h3>Vencedor:</h3>
+        <p class="resultado" id="resultado"></p>
+      </section>
 
-    <div class="align">
-      <div class="player-options">
-        <div><img opt="pedra" src="rock.png" alt="" /></div>
-        <div><img opt="papel" src="paper.png" alt="" /></div>
-        <div><img opt="tesoura" src="scissor.png" alt="" /></div>
-      </div>
-
-      <div class="enemy-options">
-        <div><img opt="pedra" src="rock.png" alt="" /></div>
-        <div><img opt="papel" src="paper.png" alt="" /></div>
-        <div><img opt="tesoura" src="scissor.png" alt="" /></div>
-      </div>
-    </div>
-
+      <section class="computador">
+        <h3>Computador</h3>
+        <div class="opcao opcao-computador">
+          <div><img opt="pedra" src="img/pedra.png" alt="" /></div>
+          <div><img opt="papel" src="img/papel.png" alt="" /></div>
+          <div><img opt="tesoura" src="img/tesoura.png" alt="" /></div>
+        </div>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
